@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import "./App.css"
 import { _jinanandachildrensLinks, _vijayaSriLinks, createLinks, useStyles } from "./navBar";
+import HeaderImg from "./assets/header-img.png";
 import img1 from "./assets/4.jpeg";
 import img2 from "./assets/1-1.jpeg";
 import img3 from "./assets/1920x714.jpeg";
@@ -24,6 +25,7 @@ function App() {
     <>
     <Box mx={10} mb={5}>
       <main>
+        <img style={{paddingBottom: 20}} src={HeaderImg} alt="No one should be hungry" />
         <Carousel slideGap="md" align="start" mb={20}>
           <Carousel.Slide>
             <img

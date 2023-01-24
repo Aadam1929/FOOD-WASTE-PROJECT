@@ -174,7 +174,7 @@ export default function HeaderMegaMenu() {
   const jinanandachildrensLinks = createLinks(_jinanandachildrensLinks, theme, classes);
 
   return (
-    <Box mb={15} sx={{ position: "sticky", top: 0, zIndex: 999999 }}>
+    <Box sx={{ position: "sticky", top: 0, zIndex: 999999 }}>
       <Header height={60} px="md">
         <Group position="apart" sx={{ height: "100%" }}>
           <Anchor href="/">

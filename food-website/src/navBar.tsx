@@ -23,7 +23,7 @@ import {
 } from "@tabler/icons";
 import Logo from "./assets/Miracle_Foundation_Logo.png";
 
-const useStyles = createStyles((theme) => ({
+export const useStyles = createStyles((theme) => ({
   link: {
     display: "flex",
     alignItems: "center",
@@ -92,7 +92,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const _vijayaSriLinks = [
+export const _vijayaSriLinks = [
   {
     icon: IconMap,
     title: "Location On Google Maps",
@@ -110,7 +110,7 @@ const _vijayaSriLinks = [
   },
 ];
 
-const _jinanandachildrensLinks = [
+export const _jinanandachildrensLinks = [
   {
     icon: IconMap,
     title: "Location On Google Maps",
@@ -131,46 +131,47 @@ const _jinanandachildrensLinks = [
   },
 ];
 
+export const createLinks = (links: Array<any>, theme: any, classes: any) =>
+links.map((item) => (
+  <UnstyledButton className={classes.subLink} key={item.title}>
+    <Group noWrap align="flex-start">
+      <ThemeIcon size={34} variant="default" radius="md">
+        <item.icon size={22} color={theme.fn.primaryColor()} />
+      </ThemeIcon>
+      <div>
+        {!!item?.link ? (
+          <Anchor
+            href={item.link}
+            sx={{ color: "black" }}
+            target="_blank"
+            size="sm"
+            weight={500}
+            rel="noopener noreferrer"
+          >
+            {item.title}
+          </Anchor>
+        ) : (
+          <Text size="sm" weight={500}>
+            {item.title}
+            <Text size="xs" color="dimmed">
+              {item.description}
+            </Text>
+          </Text>
+        )}
+      </div>
+    </Group>
+  </UnstyledButton>
+));
+
+
 export default function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const { classes, theme } = useStyles();
 
-  const createLinks = (links: Array<any>) =>
-    links.map((item) => (
-      <UnstyledButton className={classes.subLink} key={item.title}>
-        <Group noWrap align="flex-start">
-          <ThemeIcon size={34} variant="default" radius="md">
-            <item.icon size={22} color={theme.fn.primaryColor()} />
-          </ThemeIcon>
-          <div>
-            {!!item?.link ? (
-              <Anchor
-                href={item.link}
-                sx={{ color: "black" }}
-                target="_blank"
-                size="sm"
-                weight={500}
-                rel="noopener noreferrer"
-              >
-                {item.title}
-              </Anchor>
-            ) : (
-              <Text size="sm" weight={500}>
-                {item.title}
-                <Text size="xs" color="dimmed">
-                  {item.description}
-                </Text>
-              </Text>
-            )}
-          </div>
-        </Group>
-      </UnstyledButton>
-    ));
-
-  const vajiraSriLinks = createLinks(_vijayaSriLinks);
-  const jinanandachildrensLinks = createLinks(_jinanandachildrensLinks);
+  const vajiraSriLinks = createLinks(_vijayaSriLinks, theme, classes);
+  const jinanandachildrensLinks = createLinks(_jinanandachildrensLinks, theme, classes);
 
   return (
     <Box mb={15} sx={{ position: "sticky", top: 0, zIndex: 999999 }}>

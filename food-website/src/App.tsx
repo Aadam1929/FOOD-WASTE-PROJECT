@@ -9,9 +9,15 @@ import {
   Title,
 } from "@mantine/core";
 import "./App.css"
+import { _jinanandachildrensLinks, _vijayaSriLinks, createLinks, useStyles } from "./navBar";
 
 
 function App() {
+  const { classes, theme } = useStyles();
+
+  const vajiraSriLinks = createLinks(_vijayaSriLinks, theme, classes);
+  const jinanandachildrensLinks = createLinks(_jinanandachildrensLinks, theme, classes);
+
   return (
     <>
     <Box mx={10} mb={5}>
@@ -87,22 +93,11 @@ function App() {
             meals to clothing, from school supplies to tuition classes, from
             medical conditions to leisure time activities. For these children,
             this centre is home, and the staff, and their families.{" "}
-            <p>
-              <Anchor href="https://www.google.com/maps/place/Sri+Jinananda+Children%E2%80%99s+Home/@6.8795651,79.8576904,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae25bc704ef71d1:0x3dd16eac3799ceae!8m2!3d6.8795677!4d79.8598772">
-                Google Maps Link
-              </Anchor>
-            </p>
-            <p>Account Number: 06 8000 468 998 001</p>
-            <p>
-              Account Name : Sri jinananda childrnes Home Seylan Bank,
-              Wellawatta. Branch, 391, Galle Road, Wellawatte, Colombo, Sri
-              Lanka.
-            </p>
-            SWIFT CODE –{" "}
-            <Anchor href="http://www.jinanandachildrens.org/donation.html">
-              SEYBLKLX Donate link
-            </Anchor>
-            <Text size="xl" fw={600} mt={15}>
+            <SimpleGrid cols={2} spacing={0}>
+                  {jinanandachildrensLinks}
+            </SimpleGrid>
+
+            <Text size="xl" fw={600} mt={20}>
               Vajira Sri Children's development centre
             </Text>
             Vajira Sri Children’s Development Centre was established in 1983 to
@@ -126,16 +121,9 @@ function App() {
             years in the other. Since the inception of Vajira Sri Children’s
             Development Centre over 4500 children have been re-unified either
             with their families as well as being employed both in Sri Lanka
-            <p>
-              <Anchor href="https://www.google.com/maps/place/Vajira+Sri+Children%E2%80%99s+Development+Center/@6.8854107,79.8931708,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae25a3d85133a9b:0xf14d02f3391050fe!8m2!3d6.8854054!4d79.8953595">
-                Google Maps Link
-              </Anchor>
-            </p>
-            <p>Phone: +94 (011) 285 6146 Fax: +94 (011) 276 8469</p>
-            <p>E-mail: info@vajirasri.com</p>
-            <p>
-              <Anchor href="http://vajirasri.com/donate/">Donation link</Anchor>
-            </p>
+            <SimpleGrid cols={2} spacing={0}>
+                  {vajiraSriLinks}
+            </SimpleGrid>
           </Box>
         </Box>
       </main>

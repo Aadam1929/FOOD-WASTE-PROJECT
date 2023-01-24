@@ -20,7 +20,7 @@ export default function FooterComponent() {
         <a href="#">Podcast</a>
       </div>
 
-      <div class="footer-section">
+      <div className="footer-section">
         <h4>Research</h4>
         <a href="#">Map the Meal Gap</a>
         <a href="#">Charitable Food Assistance</a>

@@ -25,8 +25,10 @@ function App() {
     <>
     <Box mx={10} mb={5}>
       <main>
-        <img style={{paddingBottom: 20}} src={HeaderImg} alt="No one should be hungry" />
         <Carousel slideGap="md" align="start" mb={20}>
+          <Carousel.Slide>
+            <img style={{width: '100%'}} src={HeaderImg} alt="No one should be hungry" />
+          </Carousel.Slide>
           <Carousel.Slide>
             <img
               src={img1}

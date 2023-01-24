@@ -10,7 +10,9 @@ import {
 } from "@mantine/core";
 import "./App.css"
 import { _jinanandachildrensLinks, _vijayaSriLinks, createLinks, useStyles } from "./navBar";
-
+import img1 from "./assets/4.jpeg";
+import img2 from "./assets/1-1.jpeg";
+import img3 from "./assets/1920x714.jpeg";
 
 function App() {
   const { classes, theme } = useStyles();
@@ -25,20 +27,20 @@ function App() {
         <Carousel slideGap="md" align="start" mb={20}>
           <Carousel.Slide>
             <img
-              src="/src/assets/4.jpeg"
+              src={img1}
               alt="an image of children"
             />
           </Carousel.Slide>
           <Carousel.Slide>
             <img
-              src="/src/assets/1-1.jpeg"
+              src={img2}
               alt="an image of children"
             />
           </Carousel.Slide>
           <Carousel.Slide>
             
             <img
-              src="/src/assets/1920x714.jpeg"
+              src={img3}
               alt="an image of children"
             />
           </Carousel.Slide>

@@ -142,7 +142,7 @@ function App() {
     </Box>
 
     <SimpleGrid cols={4} sx={{backgroundImage: 'url(https://www.feedingamerica.org/themes/custom/ts_feeding_america/images/background-images/foodbank/oranges_foodbank_lg.jpg)'}}>
-      <Anchor href="#" className="no-hover-link">
+      <Anchor href="http://vajirasri.com/donate/" className="no-hover-link">
           <Box
             display="flex"
             py={30}
@@ -168,7 +168,7 @@ function App() {
           </Box>
         </Anchor>
         
-          <Anchor href="#" className="no-hover-link">
+          <Anchor href="http://www.jinanandachildrens.org/donation.html" className="no-hover-link">
           <Box
             display="flex"
             py={30}

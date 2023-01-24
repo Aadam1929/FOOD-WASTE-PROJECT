@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import "./App.css"
 
+
 function App() {
   return (
     <>
@@ -17,25 +18,23 @@ function App() {
       <main>
         <Carousel slideGap="md" align="start" mb={20}>
           <Carousel.Slide>
-            {" "}
             <img
-              src="http://www.jinanandachildrens.org/images/temp/4.jpg"
-              alt=""
-            />{" "}
+              src="/src/assets/4.jpeg"
+              alt="an image of children"
+            />
           </Carousel.Slide>
           <Carousel.Slide>
-            {" "}
             <img
-              src="http://jinanandachildrens.org/images/temp/1-1.jpg"
-              alt=""
-            />{" "}
+              src="/src/assets/1-1.jpeg"
+              alt="an image of children"
+            />
           </Carousel.Slide>
           <Carousel.Slide>
-            {" "}
+            
             <img
-              src="http://www.jinanandachildrens.org/images/temp/1920x714.jpg"
-              alt=""
-            />{" "}
+              src="/src/assets/1920x714.jpeg"
+              alt="an image of children"
+            />
           </Carousel.Slide>
         </Carousel>
         <SimpleGrid cols={2} mb={20}>

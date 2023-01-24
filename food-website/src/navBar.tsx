@@ -197,7 +197,7 @@ export default function HeaderMegaMenu() {
               withinPortal
             >
               <HoverCard.Target>
-                <a href="http://vajirasri.com/donate/" className={classes.link}>
+                <span className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Vajira Sri Children's development centre
@@ -207,7 +207,7 @@ export default function HeaderMegaMenu() {
                       color={theme.fn.primaryColor()}
                     />
                   </Center>
-                </a>
+                </span>
               </HoverCard.Target>
 
               <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
@@ -276,8 +276,7 @@ export default function HeaderMegaMenu() {
               withinPortal
             >
               <HoverCard.Target>
-                <a
-                  href="http://www.jinanandachildrens.org/donation.html"
+                <span
                   className={classes.link}
                 >
                   <Center inline>
@@ -289,7 +288,7 @@ export default function HeaderMegaMenu() {
                       color={theme.fn.primaryColor()}
                     />
                   </Center>
-                </a>
+                </span>
               </HoverCard.Target>
 
               <HoverCard.Dropdown sx={{ overflow: "hidden" }}>

@@ -11,7 +11,6 @@ export default function FooterComponent() {
 
         <a href="#">Our Programs</a>
         <a href="#">Our History</a>
-        <a href="#">Why Feeding America</a>
         <a href="#">Our Leadership</a>
         <a href="#">Annual Report</a>
         <a href="#">Our Partners</a>

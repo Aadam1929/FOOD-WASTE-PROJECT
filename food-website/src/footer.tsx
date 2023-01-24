@@ -35,9 +35,19 @@ export default function FooterComponent() {
         <a href="#">Teen Hunger Research</a>
       </div>
 
-      <div>
+      <div className="footer-section">
         <h4>Ways To Give</h4>
-        <ul></ul>
+        <a href="#">Give Monthly</a>
+        <a href="#">Fundraise</a>
+        <a href="#">Honor & Memorial Gifts</a>
+        <a href="#">Donor Advised Funds</a>
+        <a href="#">Planned Giving</a>
+        <a href="#">Give Stocks and Funds</a>
+        <a href="#">Give by Mail or Phone</a>
+        <a href="#">Give Cryptocurrency</a>
+        <a href="#">Workplace Giving</a>
+        <a href="#">Food Drives</a>
+        <a href="#">FAQ</a>
       </div>
     </footer>
   );
